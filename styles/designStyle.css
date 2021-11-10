@@ -1,0 +1,305 @@
+:root {
+    --primary1: hsl(171, 66%, 44%);
+    --primary2: hsl(233, 100%, 69%);
+
+    --neutral1: hsl(210, 10%, 33%);
+    --neutral2: hsl(201, 11%, 66%);
+
+    --mainfont: 'Bai Jamjuree', sans-serif;  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--mainfont);
+    color: var(--neutral1);
+}
+
+
+p{
+    color: var(--neutral2);
+    line-height: 33px;
+}
+
+#part_1{
+    background-image: url(../images/designImages/bg-header-desktop.png);
+    background-size: cover;  
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#part_1 #part_1_logo{
+    margin-top: 150px;
+}
+
+#part_1 h1{
+    margin-top: 40px;
+    font-size: 47px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+#part_1 p{
+    font-size: 20px;
+    max-width: 700px;
+    text-align: center;
+    margin: 22px 10px;   
+}
+
+.download_buttons_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.download_buttons_container a{
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    margin: 8px;
+}
+
+.download_buttons_container a:hover{
+    filter: brightness(.9);
+}
+
+.download_buttons_container #download_ios{
+    background: var(--primary1);
+    box-shadow: 0px 3px 1px 0px hsl(171, 66%, 39%);
+}
+
+.download_buttons_container #download_mac{
+    background: var(--primary2);
+    box-shadow: 0px 3px 1px 0px hsl(233, 100%, 62%);
+}
+
+#part_2{
+    margin-top: 160px;
+}
+
+.part_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part_top h2{
+    font-size: 35px;
+    text-align: center;
+    margin: 0px 30px;
+}
+
+.part_top p{
+    text-align: center;
+    max-width: 700px;
+    color: var(--neutral2);
+    font-size: 18px;
+    margin: 20px 30px;
+}
+
+#part_2 #part_2_bottom{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#part_2 #part_2_bottom img{
+    transform: translateX(-60px);
+    width: 55%;
+}
+
+#part_2 #part_2_bottom #part_2_side .side_group{
+    margin: 50px 40px;
+}
+
+#part_2 #part_2_bottom #part_2_side .side_group h3{
+    font-size: 25px;
+}
+
+#part_2 #part_2_bottom #part_2_side .side_group p{
+    max-width: 370px;
+    line-height: 30px;
+}
+
+#part_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#part_3 img{
+    margin-top: 60px;
+    width: 90%;
+    max-width: 900px;
+}
+
+#part_3 .part_top{
+    margin-top: 130px;
+}
+
+#part_4{
+    margin-top: 90px;
+}
+
+#part_4 #black_snip_view{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#part_4 #black_snip_view .super_col{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+#part_4 #black_snip_view .super_col img{
+    height: 30px;
+    margin-bottom: 35px;
+}
+
+#part_4 #black_snip_view .super_col h3{
+    font-size: 20px;
+}
+
+#part_4 #black_snip_view .super_col p{
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 0px 20px;
+}
+
+#company_logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 100px;
+    margin-top: 30px;
+}
+
+#company_logos img{
+    margin-top: 80px;
+}
+
+#part_5{
+    margin-top: 140px;
+}
+
+#part_5 .download_buttons_container{
+    margin-top: 20px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 140px;
+    align-items: center;
+    padding: 30px 80px;
+    background: rgb(245,246,248);
+}
+footer img:nth-child(1){
+    height: 60px;
+}
+
+footer ul{
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+footer ul li{
+    width: fit-content;
+    font-size: 18px;
+    color: var(--neutral1);
+    margin-top: 20px;
+}
+
+footer ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer #social img{
+    height: 26px;
+    margin: 0px 10px;
+}
+
+footer #social img:hover{
+    filter: brightness(1.6) saturate(1.5);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    #part_1{
+        background-image: url(../images/designImages/bg-header-mobile.png);  
+    }
+    #part_1 h1{
+        font-size: 35px;
+    }
+    #part_1 p{
+        font-size: 19px;
+        margin-top: 20px;
+    }
+    .download_buttons_container a{
+        padding: 17px 70px;       
+    }
+    .part_top h2{
+        font-size: 30px;
+    }
+    #part_2 #part_2_bottom{
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #part_2 #part_2_bottom img{
+        transform: translateX(0px);
+        width: 85%;
+    }
+    #part_2 #part_2_bottom #part_2_side .side_group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #part_2 #part_2_bottom #part_2_side .side_group p{
+        text-align: center;
+    }
+    #part_4 #black_snip_view .super_col img{
+        height: 40px;
+    }
+    #part_4 #black_snip_view .super_col h3{
+        font-size: 25px;
+    }
+    #part_4 #black_snip_view .super_col p{
+        font-size: 17px;
+    }
+    footer{
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+    footer ul{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        height: fit-content;
+        align-items: center;
+    }
+
+    footer #social{
+        margin-bottom: 20px;
+    }
+
+
+}
